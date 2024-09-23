@@ -3,16 +3,15 @@ package com.etc;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class MissileInterception {
 	//https://school.programmers.co.kr/learn/courses/30/lessons/181188
 	public static int solution(int[][] targets) {
 		// 구간 정렬: 종료점 기준으로 정렬
 		Arrays.sort(targets, (a, b) -> Integer.compare(a[1], b[1]));
-
 		int result = 0;
 		double lastIntercept = -1;  // 마지막으로 요격한 미사일 위치
-
 		for (int[] target : targets) {
 			int start = target[0];
 			int end = target[1];

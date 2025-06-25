@@ -22,7 +22,7 @@ public class MissileInterception {
 				lastIntercept = end - 0.5;  // 끝점을 포함하지 않도록 약간 왼쪽으로 발사 위치 설정
 			}
 		}
-
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
 		return result;
 	}
 

@@ -33,7 +33,7 @@ public class TravelRoute {
 	public static void main(String[] args) {
 		// 예제 입력 테스트
 		String[][] tickets1 = {{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
-		String[][] tickets2 = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}};
+		String[][] 		tickets2 = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}};
 
 		System.out.println(solution(tickets1)); // ["ICN", "JFK", "HND", "IAD"]
 		System.out.println(solution(tickets2)); // ["ICN", "ATL", "ICN", "SFO", "ATL", "SFO"]
